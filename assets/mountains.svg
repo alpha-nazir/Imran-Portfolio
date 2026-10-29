@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2a5e"/>
+      <stop offset=".45" stop-color="#6b4a9e"/>
+      <stop offset=".72" stop-color="#e0719a"/>
+      <stop offset="1" stop-color="#f6a66b"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46508f"/><stop offset="1" stop-color="#2a3569"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#25356e"/><stop offset="1" stop-color="#14224a"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1d3f"/><stop offset="1" stop-color="#081b2b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy="1" r=".6">
+      <stop offset="0" stop-color="#ffd2a0" stop-opacity=".55"/><stop offset="1" stop-color="#ffd2a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="400" fill="url(#sky)"/>
+  <rect width="1600" height="400" fill="url(#glow)"/>
+  <g fill="#fff" opacity=".7">
+    <circle cx="120" cy="40" r="1.6"/><circle cx="330" cy="75" r="1.2"/><circle cx="520" cy="28" r="1.5"/>
+    <circle cx="760" cy="55" r="1.1"/><circle cx="980" cy="30" r="1.6"/><circle cx="1180" cy="70" r="1.2"/>
+    <circle cx="1400" cy="38" r="1.5"/><circle cx="1530" cy="90" r="1.1"/><circle cx="640" cy="95" r="1"/>
+  </g>
+  <path fill="url(#far)" d="M0 250 L130 190 L220 235 L360 150 L480 230 L600 175 L740 245 L880 160 L1010 235 L1150 180 L1290 240 L1430 170 L1600 245 L1600 400 L0 400Z"/>
+  <path fill="url(#mid)" d="M0 300 L110 250 L210 290 L330 225 L450 285 L580 235 L700 295 L840 215 L980 290 L1100 240 L1230 295 L1370 235 L1490 285 L1600 255 L1600 400 L0 400Z"/>
+  <path fill="url(#near)" d="M0 350 L100 315 L200 345 L320 300 L440 345 L560 310 L690 350 L820 320 L950 352 L1080 305 L1210 348 L1340 312 L1470 350 L1600 322 L1600 400 L0 400Z"/>
+</svg>

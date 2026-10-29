@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imran Nasir | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of a fresher web developer - HTML, CSS and JavaScript projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo"><span class="logo-mark" data-bind="logoText">IN</span><span data-bind="">Alpha Nazir</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="btn btn-primary nav-cv-mobile" data-cv download>Download CV</a>
+      </nav>
+
+      <a href="#" class="btn btn-primary nav-cv" data-cv download>Download CV</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Welcome to my portfolio</p>
+          <h1>Hi, I'm <span class="accent" data-bind="name">Imran Nasir</span></h1>
+          <h2 class="hero-role"><span data-bind="role">Full Stack Developer</span> <span class="role-sub">| HTML · CSS · JavaScript</span></h2>
+          <p class="hero-desc" data-bind="heroIntro"></p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work <span class="arrow">→</span></a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="socials" data-socials></div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-glow"></div>
+          <img id="heroPhoto" class="hero-img" src="assets/hero.png" alt="Portrait of the developer" />
+          <span class="dots dots-a"></span>
+          <div class="float-badge">
+            <span class="code-ico">&lt;/&gt;</span>
+            <span data-bind="tagline">Turning Ideas Into Digital Reality</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS ================= -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">My selected work</p>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <a href="#projects" class="btn btn-outline btn-sm">View All Projects →</a>
+        </div>
+        <div class="cards-3" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Technical skills</p>
+            <h2 class="section-title">My Skills</h2>
+          </div>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+        <div class="view-all-wrap"><button class="btn btn-outline" id="skillsMore" type="button" hidden>View All Skills</button></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="eyebrow">Get to know me</p>
+          <h2 class="section-title">About Me</h2>
+          <div id="aboutText"></div>
+
+          <ul class="about-meta">
+            <li><span class="meta-ico">📍</span><div><small>Location</small><strong data-bind="location"></strong></div></li>
+            <li><span class="meta-ico">🎓</span><div><small>Experience</small><strong id="aboutExp"></strong></div></li>
+            <li><span class="meta-ico">✉️</span><div><small>Email</small><strong data-bind="email"></strong></div></li>
+          </ul>
+          <a href="#" class="btn btn-primary" data-cv download>Download CV</a>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="laptop" id="aboutVisual">
+            <div class="laptop-bar"><i></i><i></i><i></i></div>
+            <pre class="code"><code><span class="c-k">const</span> <span class="c-v">web-developer</span> = {
+  <span class="c-p">name</span>: <span class="c-s" id="codeName">"Imran Nasir"</span>,
+  <span class="c-p">skills</span>: [<span class="c-s">"HTML"</span>, <span class="c-s">"CSS"</span>, <span class="c-s">"JS"</span>],
+  <span class="c-p">projects</span>: <span class="c-s">"Web Applications"</span>,
+  <span class="c-p">learning</span>: <span class="c-s">"Every day"</span>,
+  <span class="c-p">openToWork</span>: <span class="c-k">true</span>
+};</code></pre>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS (blue theme) ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head center">
+          <div>
+            <p class="eyebrow">My work</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-sub">Here are some of my projects. Each one is built with attention to detail and a focus on clean, responsive code.</p>
+          </div>
+        </div>
+        <div class="filters" id="filters" role="tablist"></div>
+        <div class="cards-4" id="projectsGrid"></div>
+        <div class="view-all-wrap"><button class="btn btn-outline" id="projectsMore" type="button" hidden>View All Projects</button></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-sub">Have a question or want to work together? Feel free to reach out. I'll get back to you as soon as possible.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-info">
+            <div class="info-row"><span class="meta-ico">✉️</span><div><small>Email</small><strong data-bind="email"></strong></div></div>
+            <div class="info-row"><span class="meta-ico">📞</span><div><small>Phone</small><strong data-bind="phone"></strong></div></div>
+            <div class="info-row"><span class="meta-ico">📍</span><div><small>Location</small><strong data-bind="location"></strong></div></div>
+            <div class="follow">
+              <small>Follow Me</small>
+              <div class="socials" data-socials></div>
+            </div>
+          </div>
+
+          <form class="card contact-form" id="contactForm" novalidate>
+            <h3>Send Me a Message</h3>
+            <label>Name
+              <input type="text" name="name" placeholder="Your name" required />
+              <em class="err"></em>
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="Your email" required />
+              <em class="err"></em>
+            </label>
+            <label>Message
+              <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+              <em class="err"></em>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Let's Work Together</h2>
+          <p>Have a project in mind? I'd love to hear from you.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="copy">© <span id="year"></span> <span data-bind="">Alpha Nazir</span>. All rights reserved.</p>
+      <nav class="footer-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="socials" data-socials></div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
